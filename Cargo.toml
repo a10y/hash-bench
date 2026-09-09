@@ -1,0 +1,13 @@
+[package]
+name = "hash_bench"
+version = "0.1.0"
+edition = "2024"
+
+[dev-dependencies]
+blake3 = { version = "1.8", default-features = false, features = ["std"] }
+divan = "0.1"
+sha2 = { version = "0.10", features = ["asm"] }
+
+[[bench]]
+name = "hashing"
+harness = false
